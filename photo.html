@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ท่องเที่ยวไทย</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: "Sarabun", sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+        }
+
+        header{
+            background:linear-gradient(135deg,#00897b,#26a69a);
+            color:white;
+            text-align:center;
+            padding:50px 20px;
+        }
+
+        header h1{
+            font-size:3rem;
+            margin-bottom:10px;
+        }
+
+        nav{
+            background:#00695c;
+            padding:15px;
+            text-align:center;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-weight:bold;
+        }
+
+        .container{
+            width:90%;
+            max-width:1200px;
+            margin:40px auto;
+        }
+
+        .places{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+            gap:25px;
+        }
+
+        .card{
+            background:white;
+            border-radius:15px;
+            overflow:hidden;
+            box-shadow:0 4px 10px rgba(0,0,0,0.15);
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-8px);
+        }
+
+        .card img{
+            width:100%;
+            height:220px;
+            object-fit:cover;
+        }
+
+        .card-content{
+            padding:20px;
+        }
+
+        .card h2{
+            color:#00796b;
+            margin-bottom:10px;
+        }
+
+        .card p{
+            color:#555;
+            line-height:1.6;
+        }
+
+        footer{
+            background:#00695c;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>เที่ยวไทยแลนด์</h1>
+        <p>รวมสถานที่ท่องเที่ยวสวยงามทั่วประเทศไทย</p>
+    </header>
+
+    <nav>
+        <a href="#">หน้าแรก</a>
+        <a href="#">สถานที่ท่องเที่ยว</a>
+        <a href="#">บทความ</a>
+        <a href="#">ติดต่อ</a>
+    </nav>
+
+    <div class="container">
+        <div class="places">
+
+            <div class="card">
+                <img src="https://th.airportels.asia/wp-content/uploads/sites/2/2024/03/shutterstock_2230075667-1.jpg" alt="เชียงใหม่">
+                <div class="card-content">
+                    <h2>เชียงใหม่</h2>
+                    <p>
+                        เมืองแห่งวัฒนธรรมและธรรมชาติ
+                        มีวัดสวยงาม ภูเขา และอากาศเย็นสบายตลอดปี
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/phuket.jpg" alt="ภูเก็ต">
+                <div class="card-content">
+                    <h2>ภูเก็ต</h2>
+                    <p>
+                        เกาะท่องเที่ยวชื่อดังระดับโลก
+                        เต็มไปด้วยชายหาดที่สวยงามและกิจกรรมทางทะเล
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/krabi.jpg" alt="กระบี่">
+                <div class="card-content">
+                    <h2>กระบี่</h2>
+                    <p>
+                        โดดเด่นด้วยภูเขาหินปูนและทะเลสีฟ้าใส
+                        เหมาะสำหรับการพักผ่อนและดำน้ำ
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/ayutthaya.jpg" alt="อยุธยา">
+                <div class="card-content">
+                    <h2>อยุธยา</h2>
+                    <p>
+                        เมืองมรดกโลกที่เต็มไปด้วยประวัติศาสตร์
+                        และโบราณสถานอันทรงคุณค่า
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/khaoyai.jpg" alt="เขาใหญ่">
+                <div class="card-content">
+                    <h2>เขาใหญ่</h2>
+                    <p>
+                        อุทยานแห่งชาติยอดนิยม
+                        เหมาะสำหรับคนรักธรรมชาติและการเดินป่า
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/samui.jpg" alt="เกาะสมุย">
+                <div class="card-content">
+                    <h2>เกาะสมุย</h2>
+                    <p>
+                        เกาะสวยในอ่าวไทย
+                        มีชายหาดขาวสะอาดและรีสอร์ทระดับโลก
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 เว็บไซต์แนะนำสถานที่ท่องเที่ยวประเทศไทย</p>
+    </footer>
+
+</body>
+</html>
